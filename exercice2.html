@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery-3.2.1.js"></script>
+  <meta charset="utf-8">
+  <title>exercice 2</title>
+</head>
+<body>
+  <button id="plus">PLUS</button>
+  <button id="moins">MOINS</button>
+  <p><a id="count">0</a></p>
+  <script>
+  $('#plus').click(function() {
+    $('#count').html(function(i, val) {
+      return val*1+1
+    });
+  });
+  $('#moins').click(function() {
+    $('#count').html(function(i, val) {
+      return val*1-1
+    });
+  });
+  </script>
+</body>
+</html>
